@@ -1,11 +1,12 @@
-﻿/*		Napisati program na programskom jeziku C koji sa standardnog ulaza učitava ceo broj tipa
- *	unsigned int(pretpostaviti da je za smeštanje jednog podatka tog tipa potrebno 16 bita), a
- *	potom proverava da li je bitska reprezentacija tog broja, posmatrana od bita najveće težine ka bitu
- *	najmanje težine, komplementarna u odnosu na bitsku reprezentaciju posmatranu od bita namanje
- *	težine ka bitu najveće težine.U slučaju da jeste, na standardnom izlazu treba ispisati poruku “DA“, u
- *	suprotnom poruku “NE“.Pimer: binarna reprezentacija broja 48322 je 1011110011000010, pa se
- *	ispisuje poruka “DA“.
- *	(1. kolokvijum 2014, SI, 2. zadatak)
+﻿/*	
+	Napisati program na programskom jeziku C koji sa standardnog ulaza učitava ceo broj tipa
+	unsigned int(pretpostaviti da je za smeštanje jednog podatka tog tipa potrebno 16 bita), a
+	potom proverava da li je bitska reprezentacija tog broja, posmatrana od bita najveće težine ka bitu
+	najmanje težine, komplementarna u odnosu na bitsku reprezentaciju posmatranu od bita namanje
+	težine ka bitu najveće težine.U slučaju da jeste, na standardnom izlazu treba ispisati poruku “DA“, u
+	suprotnom poruku “NE“.Pimer: binarna reprezentacija broja 48322 je 1011110011000010, pa se
+	ispisuje poruka “DA“.
+	(1. kolokvijum 2014, SI, 2. zadatak)
  */
 
 #include <stdio.h>

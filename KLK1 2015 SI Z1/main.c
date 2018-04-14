@@ -24,7 +24,7 @@ int main() {
 
 	while (!(b & 1)) b >>= 1;			// pomeramo b tako da je '1' najnize tezine na 0. poziciji
 	while (!((b << n) & 0x8000)) n++;	// brojimo koliko ima cifara u broju b izmedju prve i poslednje '1', ukljucujuci i njih
-	n = 16 - n;							// n je broj bitova iz broju b koje trazimo u broju a
+	n = SIZE - n;							// n je broj bitova iz broja b koje trazimo u broju a
 
 	for (i = 0; i <= SIZE - n; i++) {
 		m1 = 1 << i;					// maska za izdvajanje bita iz broja a

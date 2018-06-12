@@ -67,10 +67,14 @@ int main() {
 	for (i = 0; i < n; i++) {
 		cnt = 0;
 		for (j = 0; j < strlen(text[i]); j++) {
-			if (text[i][j] == ' ') cnt++;
+			if (text[i][j] == ' ') {
+				cnt++;
+				while (text[i][j] == ' ') j++;
+				putchar(' ');
+			}
 			if (cnt == N) {
 				cnt = 0;
-				j++;
+				// j++;
 				putchar('\n');
 			}
 			putchar(text[i][j]);
